@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class BrowseAllArtViewController: UIViewController {
 
     @IBOutlet var artImages: UIImageView!
@@ -17,7 +18,6 @@ class BrowseAllArtViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let path = NSBundle.mainBundle().pathForResource("artistTest", ofType: "plist")
         
         
         
