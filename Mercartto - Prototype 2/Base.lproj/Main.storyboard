@@ -95,8 +95,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="london" translatesAutoresizingMaskIntoConstraints="NO" id="7Fb-Il-56a">
-                                <rect key="frame" x="124" y="62" width="352" height="389"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p2right" translatesAutoresizingMaskIntoConstraints="NO" id="qDN-DK-res">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="as7-1R-Cjj">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="46h-Hd-ygu">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="london" translatesAutoresizingMaskIntoConstraints="NO" id="7Fb-Il-56a">
+                                <rect key="frame" x="140" y="44" width="320" height="389"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ5-Bh-jeQ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -148,7 +159,17 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nJ5-Bh-jeQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6AG-Em-mCp"/>
+                            <constraint firstItem="as7-1R-Cjj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6nD-02-msi"/>
+                            <constraint firstItem="nJ5-Bh-jeQ" firstAttribute="top" secondItem="7Fb-Il-56a" secondAttribute="top" constant="-44" id="Gwf-3o-ASz"/>
+                            <constraint firstItem="qDN-DK-res" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="JlX-jX-EYg"/>
                             <constraint firstAttribute="trailing" secondItem="nJ5-Bh-jeQ" secondAttribute="trailing" id="Ksh-iU-2ZS"/>
+                            <constraint firstItem="qDN-DK-res" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="LgK-Tq-zi0"/>
+                            <constraint firstAttribute="trailing" secondItem="as7-1R-Cjj" secondAttribute="trailing" id="M9O-n6-tua"/>
+                            <constraint firstAttribute="trailing" secondItem="qDN-DK-res" secondAttribute="trailing" id="OdN-uA-dfW"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qDN-DK-res" secondAttribute="bottom" id="cQs-RG-3h9"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="as7-1R-Cjj" secondAttribute="bottom" id="lBM-c0-z4Q"/>
+                            <constraint firstItem="as7-1R-Cjj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="tpf-85-XTz"/>
+                            <constraint firstAttribute="centerX" secondItem="7Fb-Il-56a" secondAttribute="centerX" id="vem-pv-brz"/>
                             <constraint firstItem="nJ5-Bh-jeQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="wfo-a2-0h8"/>
                         </constraints>
                     </view>
@@ -276,6 +297,7 @@
         <image name="facebookLogin_button" width="172" height="29"/>
         <image name="logo" width="141" height="49"/>
         <image name="london" width="320" height="389"/>
+        <image name="p2right" width="736" height="452"/>
         <image name="startthequiz_button" width="162" height="30"/>
         <image name="walkthroughCentre" width="248" height="356"/>
         <image name="wyap_darkend" width="320" height="568"/>

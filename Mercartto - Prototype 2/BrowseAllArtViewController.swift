@@ -17,7 +17,8 @@ class BrowseAllArtViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-//        let path = NSBundle.pathForResource("", ofType: <#String?#>, inDirectory: <#String#>)
+        let path = NSBundle.mainBundle().pathForResource("artistTest", ofType: "plist")
+        
         
         
     }
