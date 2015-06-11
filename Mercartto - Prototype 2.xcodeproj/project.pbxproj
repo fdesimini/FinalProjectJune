@@ -13,6 +13,8 @@
 		397478DD1B27746B00161433 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397478DC1B27746B00161433 /* Images.xcassets */; };
 		397478E01B27746B00161433 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397478DE1B27746B00161433 /* LaunchScreen.xib */; };
 		397478EC1B27746B00161433 /* Mercartto___Prototype_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397478EB1B27746B00161433 /* Mercartto___Prototype_2Tests.swift */; };
+		39F809A11B28B77A005EA9DF /* WYAPRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */; };
+		39F809A31B28B7E3005EA9DF /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		397478E51B27746B00161433 /* Mercartto - Prototype 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mercartto - Prototype 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		397478EA1B27746B00161433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		397478EB1B27746B00161433 /* Mercartto___Prototype_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mercartto___Prototype_2Tests.swift"; sourceTree = "<group>"; };
+		39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYAPRootViewController.swift; sourceTree = "<group>"; };
+		39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				397478DC1B27746B00161433 /* Images.xcassets */,
 				397478DE1B27746B00161433 /* LaunchScreen.xib */,
 				397478D31B27746B00161433 /* Supporting Files */,
+				39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */,
+				39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */,
 			);
 			path = "Mercartto - Prototype 2";
 			sourceTree = "<group>";
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F809A31B28B7E3005EA9DF /* LauncherViewController.swift in Sources */,
 				397478D81B27746B00161433 /* ViewController.swift in Sources */,
+				39F809A11B28B77A005EA9DF /* WYAPRootViewController.swift in Sources */,
 				397478D61B27746B00161433 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +417,7 @@
 				397478F11B27746B00161433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		397478F21B27746B00161433 /* Build configuration list for PBXNativeTarget "Mercartto - Prototype 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				397478F41B27746B00161433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

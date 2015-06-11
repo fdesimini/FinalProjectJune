@@ -1,13 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="74v-dA-Nvu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Launcher View Controller-->
+        <scene sceneID="oYx-pO-j1q">
+            <objects>
+                <viewController id="IUt-9e-AXf" customClass="LauncherViewController" customModule="Mercartto___Prototype_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ftn-wf-CnU"/>
+                        <viewControllerLayoutGuide type="bottom" id="r9b-FE-LzJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BAK-27-xio">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wyap_darkend" translatesAutoresizingMaskIntoConstraints="NO" id="ovm-e4-D98">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEV-LB-MU4">
+                                <rect key="frame" x="0.0" y="-38" width="600" height="676"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9Co-Ui-bwR">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="676"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="4b0-JV-zVR">
+                                <rect key="frame" x="230" y="28" width="141" height="49"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthroughCentre" translatesAutoresizingMaskIntoConstraints="NO" id="JkW-Oe-Ics">
+                                <rect key="frame" x="176" y="98" width="248" height="356"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh3-1j-yMK">
+                                <rect key="frame" x="214" y="501" width="172" height="29"/>
+                                <state key="normal" image="facebookLogin_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LXP-LB-7Pi" kind="presentation" identifier="goToWYAP" modalTransitionStyle="crossDissolve" id="22M-Rd-h3l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQV-Mk-4Ol">
+                                <rect key="frame" x="285" y="538" width="31" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" identifier="showArt" id="MK9-wk-UeT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JkW-Oe-Ics" firstAttribute="bottom" secondItem="gh3-1j-yMK" secondAttribute="bottom" constant="-76" id="33s-H6-o9J"/>
+                            <constraint firstItem="ovm-e4-D98" firstAttribute="leading" secondItem="BAK-27-xio" secondAttribute="leading" id="4HK-Hs-L01"/>
+                            <constraint firstItem="VQV-Mk-4Ol" firstAttribute="bottom" secondItem="gh3-1j-yMK" secondAttribute="bottom" constant="38" id="4Sk-dK-FF5"/>
+                            <constraint firstAttribute="centerX" secondItem="JkW-Oe-Ics" secondAttribute="centerX" id="5nk-pT-yqN"/>
+                            <constraint firstItem="VEV-LB-MU4" firstAttribute="top" secondItem="ftn-wf-CnU" secondAttribute="bottom" constant="-58" id="7Or-ij-OMy"/>
+                            <constraint firstAttribute="trailing" secondItem="VEV-LB-MU4" secondAttribute="trailing" id="CPS-wr-k2O"/>
+                            <constraint firstItem="4b0-JV-zVR" firstAttribute="top" secondItem="ftn-wf-CnU" secondAttribute="bottom" constant="8" id="G55-An-apK"/>
+                            <constraint firstItem="ovm-e4-D98" firstAttribute="top" secondItem="ftn-wf-CnU" secondAttribute="bottom" id="RIt-CE-W4t"/>
+                            <constraint firstAttribute="centerX" secondItem="VQV-Mk-4Ol" secondAttribute="centerX" constant="-0.5" id="Unh-3z-gP1"/>
+                            <constraint firstAttribute="trailing" secondItem="ovm-e4-D98" secondAttribute="trailing" id="eHW-ID-tZF"/>
+                            <constraint firstItem="VEV-LB-MU4" firstAttribute="leading" secondItem="BAK-27-xio" secondAttribute="leading" id="fc5-3u-kDU"/>
+                            <constraint firstAttribute="centerX" secondItem="4b0-JV-zVR" secondAttribute="centerX" id="kz4-Os-ZGM"/>
+                            <constraint firstItem="r9b-FE-LzJ" firstAttribute="top" secondItem="VEV-LB-MU4" secondAttribute="bottom" constant="-38" id="olZ-KY-Ka8"/>
+                            <constraint firstItem="JkW-Oe-Ics" firstAttribute="top" secondItem="ftn-wf-CnU" secondAttribute="bottom" constant="78" id="p0h-pY-QfL"/>
+                            <constraint firstAttribute="centerX" secondItem="gh3-1j-yMK" secondAttribute="centerX" id="pfU-fW-B1w"/>
+                            <constraint firstItem="r9b-FE-LzJ" firstAttribute="top" secondItem="ovm-e4-D98" secondAttribute="bottom" id="ynS-E5-bsf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hZo-44-05j"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="goToArt" id="8J4-M8-l1G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FML-Dp-FX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2139" y="176"/>
+        </scene>
+        <!--Browse Art-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Mercartto___Prototype_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +94,191 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ5-Bh-jeQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Browse Art" id="CkU-QA-nNi">
+                                        <barButtonItem key="leftBarButtonItem" title="W.Y.A.P?" style="done" id="g60-vc-6rL">
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="LXP-LB-7Pi" kind="presentation" identifier="goToWYAPfromBrowse" id="MDf-x1-rrC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Favourites" id="a5b-XC-3NT">
+                                            <color key="tintColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="9PT-k1-BSO" kind="show" identifier="goToFavourite" id="cvg-Xx-3Z3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TBb-Wk-yBv" userLabel="BottomNav">
+                                <rect key="frame" x="0.0" y="466" width="600" height="134"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jD7-aY-DVV">
+                                        <rect key="frame" x="208" y="27" width="60" height="79"/>
+                                        <state key="normal" image="Dislike Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAc-s9-Cjs">
+                                        <rect key="frame" x="331" y="27" width="61" height="79"/>
+                                        <state key="normal" image="Like Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWf-6Z-qLd">
+                                <rect key="frame" x="385" y="396" width="89" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Buy Now!">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.2666666667" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="london" translatesAutoresizingMaskIntoConstraints="NO" id="7Fb-Il-56a">
+                                <rect key="frame" x="124" y="62" width="352" height="389"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nJ5-Bh-jeQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6AG-Em-mCp"/>
+                            <constraint firstAttribute="trailing" secondItem="nJ5-Bh-jeQ" secondAttribute="trailing" id="Ksh-iU-2ZS"/>
+                            <constraint firstItem="nJ5-Bh-jeQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="wfo-a2-0h8"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Browse Art" id="Iwg-Ii-LdA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2840" y="176"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4qb-os-JT8">
+            <objects>
+                <viewController id="9PT-k1-BSO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VBv-iH-ueG"/>
+                        <viewControllerLayoutGuide type="bottom" id="X2y-vg-W2D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wqD-bj-0Au">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gBw-Cj-LIW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="zrh-Mx-WZO">
+                                        <barButtonItem key="rightBarButtonItem" title="close" id="e2d-qs-enL">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="show" identifier="goBackToBrowse" id="kPY-ip-xGG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78823529410000004" green="0.85882352939999995" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVr-eb-7G0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3374" y="23"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="6g2-n9-kbO">
+            <objects>
+                <viewController id="LXP-LB-7Pi" customClass="WYAPRootViewController" customModule="Mercartto___Prototype_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Io-q2-XC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="bz9-pm-2aY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zsb-yw-fDg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wyap_darkend" translatesAutoresizingMaskIntoConstraints="NO" id="yTD-r3-mkY">
+                                <rect key="frame" x="0.0" y="-3" width="320" height="571"/>
+                            </imageView>
+                            <navigationBar alpha="0.49999999999999961" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8FN-cI-kiK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="W.Y.A.P?" id="FUN-vI-CU3">
+                                        <barButtonItem key="rightBarButtonItem" title="close" id="Epv-mr-6Xt">
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="closeSelected:" destination="LXP-LB-7Pi" id="bWg-mg-Xvn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="W.Y.A.P. Title" translatesAutoresizingMaskIntoConstraints="NO" id="b9H-i0-LjQ">
+                                <rect key="frame" x="67" y="209" width="187" height="77"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hcf-TT-WRN">
+                                <rect key="frame" x="0.0" y="310" width="600" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qs1-0L-0yR">
+                                        <rect key="frame" x="70" y="20" width="162" height="30"/>
+                                        <state key="normal" image="startthequiz_button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.65098039215686276" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FVc-Sn-wzp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2139" y="1097"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3M2-UJ-7NV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="74v-dA-Nvu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Alb-Oz-bqM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IUt-9e-AXf" kind="relationship" relationship="rootViewController" id="ZGk-R8-JHB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BqT-uq-xnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1327" y="176"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dislike Button" width="60" height="79"/>
+        <image name="Like Button" width="61" height="79"/>
+        <image name="W.Y.A.P. Title" width="187" height="77"/>
+        <image name="facebookLogin_button" width="172" height="29"/>
+        <image name="logo" width="141" height="49"/>
+        <image name="london" width="320" height="389"/>
+        <image name="startthequiz_button" width="162" height="30"/>
+        <image name="walkthroughCentre" width="248" height="356"/>
+        <image name="wyap_darkend" width="320" height="568"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8J4-M8-l1G"/>
+        <segue reference="MDf-x1-rrC"/>
+    </inferredMetricsTieBreakers>
 </document>
