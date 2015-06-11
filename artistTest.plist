@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ImageName</key>
+	<array>
+		<string>p1left.jpg</string>
+		<string>p1right.jpg</string>
+		<string>p2left.jpg</string>
+		<string>p2right.jpg</string>
+		<string>p3left.jpg</string>
+		<string>p3right.jpg</string>
+		<string>p4left.jpg</string>
+		<string>p4right.jpg</string>
+	</array>
+	<key>ArtistName</key>
+	<array>
+		<string>David Hockney</string>
+		<string>Franklin Carmichael</string>
+		<string>Mequitta Ahuja</string>
+		<string>Caspar David Friedrich</string>
+		<string>Augustus Edwin John</string>
+		<string>Vincent Van Gogh</string>
+		<string>Albert Oehlen</string>
+		<string>Johannes Vermeer</string>
+	</array>
+	<key>ArtTitle</key>
+	<array>
+		<string>Large Interior, Los Angeles</string>
+		<string>North Shore, Lake Superior</string>
+		<string>Parade (Diptych)</string>
+		<string>Moonrise Over the Sea</string>
+		<string>The Marchesa Casati</string>
+		<string>The Harvest</string>
+		<string>Sculptures find their location</string>
+		<string>The Milkmaid</string>
+	</array>
+</dict>
+</plist>

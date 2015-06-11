@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3955AA191B29214500DC6A14 /* artistTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3955AA181B29214500DC6A14 /* artistTest.plist */; };
+		3955AA1D1B29247C00DC6A14 /* BrowseAllArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955AA1C1B29247C00DC6A14 /* BrowseAllArtViewController.swift */; };
 		397478D61B27746B00161433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397478D51B27746B00161433 /* AppDelegate.swift */; };
 		397478D81B27746B00161433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397478D71B27746B00161433 /* ViewController.swift */; };
 		397478DB1B27746B00161433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397478D91B27746B00161433 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3955AA181B29214500DC6A14 /* artistTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = artistTest.plist; sourceTree = "<group>"; };
+		3955AA1C1B29247C00DC6A14 /* BrowseAllArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrowseAllArtViewController.swift; path = "Mercartto - Prototype 2/BrowseAllArtViewController.swift"; sourceTree = "<group>"; };
 		397478D01B27746B00161433 /* Mercartto - Prototype 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mercartto - Prototype 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		397478D41B27746B00161433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		397478D51B27746B00161433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,8 +42,8 @@
 		397478E51B27746B00161433 /* Mercartto - Prototype 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mercartto - Prototype 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		397478EA1B27746B00161433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		397478EB1B27746B00161433 /* Mercartto___Prototype_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mercartto___Prototype_2Tests.swift"; sourceTree = "<group>"; };
-		39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYAPRootViewController.swift; sourceTree = "<group>"; };
-		39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
+		39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WYAPRootViewController.swift; path = "Mercartto - Prototype 2/WYAPRootViewController.swift"; sourceTree = "<group>"; };
+		39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LauncherViewController.swift; path = "Mercartto - Prototype 2/LauncherViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3955AA1A1B29237100DC6A14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3955AA181B29214500DC6A14 /* artistTest.plist */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3955AA1B1B29238100DC6A14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */,
+				39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */,
+				3955AA1C1B29247C00DC6A14 /* BrowseAllArtViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		397478C71B27746B00161433 = {
 			isa = PBXGroup;
 			children = (
+				3955AA1B1B29238100DC6A14 /* Controller */,
+				3955AA1A1B29237100DC6A14 /* Model */,
 				397478D21B27746B00161433 /* Mercartto - Prototype 2 */,
 				397478E81B27746B00161433 /* Mercartto - Prototype 2Tests */,
 				397478D11B27746B00161433 /* Products */,
@@ -87,8 +111,6 @@
 				397478DC1B27746B00161433 /* Images.xcassets */,
 				397478DE1B27746B00161433 /* LaunchScreen.xib */,
 				397478D31B27746B00161433 /* Supporting Files */,
-				39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */,
-				39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */,
 			);
 			path = "Mercartto - Prototype 2";
 			sourceTree = "<group>";
@@ -199,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				397478DB1B27746B00161433 /* Main.storyboard in Resources */,
+				3955AA191B29214500DC6A14 /* artistTest.plist in Resources */,
 				397478E01B27746B00161433 /* LaunchScreen.xib in Resources */,
 				397478DD1B27746B00161433 /* Images.xcassets in Resources */,
 			);
@@ -219,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39F809A31B28B7E3005EA9DF /* LauncherViewController.swift in Sources */,
+				3955AA1D1B29247C00DC6A14 /* BrowseAllArtViewController.swift in Sources */,
 				397478D81B27746B00161433 /* ViewController.swift in Sources */,
 				39F809A11B28B77A005EA9DF /* WYAPRootViewController.swift in Sources */,
 				397478D61B27746B00161433 /* AppDelegate.swift in Sources */,
