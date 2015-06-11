@@ -1,5 +1,5 @@
 //
-//  DataArray.swift
+//  ArtistData.swift
 //  Mercartto - Prototype 2
 //
 //  Created by Frank Desimini on 2015-06-11.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-class DataArray: NSData {
-   
+class ArtistData: NSObject {
     
     var artistInfo = [
         ["ArtTitle": "Large Interior, Los Angeles","ArtistName": "David Hockney", "ImageName":"p1left.jpg"],
@@ -21,5 +20,6 @@ class DataArray: NSData {
         ["ArtTitle": "Sculptures find their location","ArtistName": "Albert Oehlen", "ImageName":"p4left.jpg"],
         ["ArtTitle": "The Milkmaid","ArtistName": "Johannes Vermeer", "ImageName":"p4right.jpg"]
     ]
-    
+
+   
 }

@@ -15,7 +15,8 @@
 		397478DD1B27746B00161433 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397478DC1B27746B00161433 /* Images.xcassets */; };
 		397478E01B27746B00161433 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397478DE1B27746B00161433 /* LaunchScreen.xib */; };
 		397478EC1B27746B00161433 /* Mercartto___Prototype_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397478EB1B27746B00161433 /* Mercartto___Prototype_2Tests.swift */; };
-		398050EA1B29FB4100517AFA /* DataArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398050E91B29FB4100517AFA /* DataArray.swift */; };
+		398050EE1B2A032200517AFA /* ArtistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398050ED1B2A032200517AFA /* ArtistData.swift */; };
+		398050F01B2A11A800517AFA /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398050EF1B2A11A800517AFA /* FavouritesViewController.swift */; };
 		39F809A11B28B77A005EA9DF /* WYAPRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */; };
 		39F809A31B28B7E3005EA9DF /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +44,8 @@
 		397478E51B27746B00161433 /* Mercartto - Prototype 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mercartto - Prototype 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		397478EA1B27746B00161433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		397478EB1B27746B00161433 /* Mercartto___Prototype_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mercartto___Prototype_2Tests.swift"; sourceTree = "<group>"; };
-		398050E91B29FB4100517AFA /* DataArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataArray.swift; sourceTree = "<group>"; };
+		398050ED1B2A032200517AFA /* ArtistData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtistData.swift; path = "Mercartto - Prototype 2/ArtistData.swift"; sourceTree = "<group>"; };
+		398050EF1B2A11A800517AFA /* FavouritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavouritesViewController.swift; path = "Mercartto - Prototype 2/FavouritesViewController.swift"; sourceTree = "<group>"; };
 		39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WYAPRootViewController.swift; path = "Mercartto - Prototype 2/WYAPRootViewController.swift"; sourceTree = "<group>"; };
 		39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LauncherViewController.swift; path = "Mercartto - Prototype 2/LauncherViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				3955AA181B29214500DC6A14 /* artistTest.plist */,
-				398050E91B29FB4100517AFA /* DataArray.swift */,
+				398050ED1B2A032200517AFA /* ArtistData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -81,6 +83,7 @@
 				39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */,
 				39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */,
 				3955AA1C1B29247C00DC6A14 /* BrowseAllArtViewController.swift */,
+				398050EF1B2A11A800517AFA /* FavouritesViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -245,10 +248,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39F809A31B28B7E3005EA9DF /* LauncherViewController.swift in Sources */,
+				398050EE1B2A032200517AFA /* ArtistData.swift in Sources */,
 				3955AA1D1B29247C00DC6A14 /* BrowseAllArtViewController.swift in Sources */,
 				397478D81B27746B00161433 /* ViewController.swift in Sources */,
-				398050EA1B29FB4100517AFA /* DataArray.swift in Sources */,
 				39F809A11B28B77A005EA9DF /* WYAPRootViewController.swift in Sources */,
+				398050F01B2A11A800517AFA /* FavouritesViewController.swift in Sources */,
 				397478D61B27746B00161433 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
