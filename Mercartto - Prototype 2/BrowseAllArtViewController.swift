@@ -16,6 +16,9 @@ class BrowseAllArtViewController: UIViewController {
     var currentIndex:Int = 0
     let artistData = ArtistData()
     
+    @IBOutlet var artTitle: UILabel!
+    @IBOutlet var artistName: UILabel!
+    
     //This is my dislike button
     @IBAction func dislikeButton(sender: AnyObject) {
         
@@ -23,6 +26,7 @@ class BrowseAllArtViewController: UIViewController {
         styleMyViews()
     }
     
+    //This is my like button
     @IBAction func likeBUtton(sender: AnyObject) {
         
         //once pressed:
@@ -32,14 +36,10 @@ class BrowseAllArtViewController: UIViewController {
     }
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-
-        
         
     }
 
@@ -56,6 +56,13 @@ class BrowseAllArtViewController: UIViewController {
         if let imageName = artistData.artistInfo[currentIndex]["ImageName"] {
             artImages.image = UIImage(named: imageName)
         }
+        if let artworkNameTitle = artistData.artistInfo[currentIndex]["ArtTitle"]{
+            artTitle.text = artworkNameTitle
+        }
+        if let artistNameTitle = artistData.artistInfo[currentIndex]["ArtistName"]{
+            artistName.text = artistNameTitle
+        }
+
     }
     
     
