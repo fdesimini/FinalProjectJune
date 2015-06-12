@@ -13,11 +13,13 @@ class BrowseAllArtViewController: UIViewController {
     
     //This is the image I want to swap data into
     @IBOutlet var artImages: UIImageView!
+    @IBOutlet var artTitle: UILabel!
+    @IBOutlet var artistName: UILabel!
+    @IBOutlet var backgroundImage: UIImageView!
+    
     var currentIndex:Int = 0
     let artistData = ArtistData()
     
-    @IBOutlet var artTitle: UILabel!
-    @IBOutlet var artistName: UILabel!
     
     //This is my dislike button
     @IBAction func dislikeButton(sender: AnyObject) {
@@ -61,6 +63,9 @@ class BrowseAllArtViewController: UIViewController {
         }
         if let artistNameTitle = artistData.artistInfo[currentIndex]["ArtistName"]{
             artistName.text = artistNameTitle
+        }
+        if let backgroundImageName = artistData.artistInfo[currentIndex]["ImageName"] {
+            backgroundImage.image = UIImage(named: backgroundImageName)
         }
 
     }

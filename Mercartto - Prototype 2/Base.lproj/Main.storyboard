@@ -220,6 +220,7 @@
                         <outlet property="artImages" destination="7Fb-Il-56a" id="xDI-7d-UyL"/>
                         <outlet property="artTitle" destination="SY4-rx-sOo" id="EEx-2t-qNs"/>
                         <outlet property="artistName" destination="2nS-dH-m7W" id="hG5-xU-Cp6"/>
+                        <outlet property="backgroundImage" destination="qDN-DK-res" id="eRK-MI-o53"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
