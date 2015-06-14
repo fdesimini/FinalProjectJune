@@ -110,7 +110,7 @@
                             </visualEffectView>
                             <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ5-Bh-jeQ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <color key="barTintColor" red="0.85098039215686272" green="0.078431372549019607" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.79607843137254897" green="0.12549019607843137" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Browse Art" id="CkU-QA-nNi">
                                         <barButtonItem key="leftBarButtonItem" title="W.Y.A.P?" style="done" id="g60-vc-6rL">
@@ -151,7 +151,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="YAc-s9-Cjs" firstAttribute="leading" secondItem="jD7-aY-DVV" secondAttribute="trailing" constant="63" id="4wp-vL-6U2"/>
@@ -194,8 +194,10 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NY-RO-U1s">
-                                <rect key="frame" x="0.0" y="244" width="600" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NY-RO-U1s">
+                                <rect key="frame" x="18" y="228" width="566" height="70"/>
+                                <string key="text">Swipe left if you don't want to see this art again.
+ Swipe to the right if you want to add the art to your favourites</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -213,17 +215,21 @@
                             <constraint firstItem="2nS-dH-m7W" firstAttribute="leading" secondItem="jZx-Q0-oaP" secondAttribute="trailing" constant="3" id="Hhb-i4-fxv"/>
                             <constraint firstItem="TBb-Wk-yBv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Hs8-gV-XhL"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7Fb-Il-56a" secondAttribute="bottom" constant="120" id="JNB-Z1-HQ6"/>
+                            <constraint firstItem="0NY-RO-U1s" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="2" id="Kks-8k-ABc"/>
                             <constraint firstItem="as7-1R-Cjj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="LVL-ft-ICf"/>
                             <constraint firstItem="nJ5-Bh-jeQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="LZE-Fb-XDq"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="as7-1R-Cjj" secondAttribute="bottom" id="Omo-4n-yvq"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="TBb-Wk-yBv" secondAttribute="bottom" id="PFS-9E-ISG"/>
                             <constraint firstItem="nJ5-Bh-jeQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="R3R-7c-qyv"/>
                             <constraint firstItem="jZx-Q0-oaP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="Scm-qA-Z5g"/>
+                            <constraint firstItem="0NY-RO-U1s" firstAttribute="centerX" secondItem="7Fb-Il-56a" secondAttribute="centerX" constant="1" id="YwH-zw-i9p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7Fb-Il-56a" secondAttribute="trailing" id="Ywa-Je-hL8"/>
                             <constraint firstItem="qDN-DK-res" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="aQM-xH-WNQ"/>
                             <constraint firstItem="as7-1R-Cjj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="cA3-rp-ref"/>
                             <constraint firstItem="TBb-Wk-yBv" firstAttribute="top" secondItem="jZx-Q0-oaP" secondAttribute="bottom" constant="22" id="d4t-Wr-zGg"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qDN-DK-res" secondAttribute="bottom" id="dVT-Ov-O0w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0NY-RO-U1s" secondAttribute="trailing" id="eWk-2C-DmJ"/>
+                            <constraint firstItem="0NY-RO-U1s" firstAttribute="centerY" secondItem="7Fb-Il-56a" secondAttribute="centerY" constant="1" id="gO8-dR-qbv"/>
                             <constraint firstItem="Grw-0j-Wfg" firstAttribute="centerY" secondItem="7Fb-Il-56a" secondAttribute="centerY" constant="-7" id="jca-g0-ker"/>
                             <constraint firstItem="qDN-DK-res" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="mCK-da-dBL"/>
                             <constraint firstItem="wuA-Hc-yf4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="33" id="q3v-sO-Kkw"/>
@@ -239,6 +245,7 @@
                         <outlet property="artTitle" destination="SY4-rx-sOo" id="EEx-2t-qNs"/>
                         <outlet property="artistName" destination="2nS-dH-m7W" id="hG5-xU-Cp6"/>
                         <outlet property="backgroundImage" destination="qDN-DK-res" id="eRK-MI-o53"/>
+                        <outlet property="welcomeText" destination="0NY-RO-U1s" id="9lP-in-wcY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -325,7 +332,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.96078431372549022" green="0.65098039215686276" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.24313725490196078" green="0.7686274509803922" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="qs1-0L-0yR" secondAttribute="centerX" id="6fR-HR-jRl"/>
                                     <constraint firstAttribute="centerY" secondItem="qs1-0L-0yR" secondAttribute="centerY" id="qd7-a7-Tju"/>
@@ -389,7 +396,7 @@
         <image name="wyap_darkend" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="22M-Rd-h3l"/>
         <segue reference="MK9-wk-UeT"/>
-        <segue reference="MDf-x1-rrC"/>
     </inferredMetricsTieBreakers>
 </document>

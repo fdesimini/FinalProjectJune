@@ -16,6 +16,7 @@ class BrowseAllArtViewController: UIViewController {
     @IBOutlet var artTitle: UILabel!
     @IBOutlet var artistName: UILabel!
     @IBOutlet var backgroundImage: UIImageView!
+    @IBOutlet var welcomeText: UILabel!
     
     var currentIndex:Int = 0
     let artistData = ArtistData()
@@ -26,6 +27,8 @@ class BrowseAllArtViewController: UIViewController {
         
         //once pressed - remove the current image from the view and add another view
         styleMyViews()
+        welcomeText.hidden = true
+        
     }
     
     //This is my like button
@@ -35,6 +38,8 @@ class BrowseAllArtViewController: UIViewController {
         // 1. add "liked" image and info to "Favourites"
         // 2. remove the current image and info from view and load in new image 
         styleMyViews()
+        welcomeText.hidden = true
+        
     }
     
     
