@@ -17,6 +17,8 @@
 		397478EC1B27746B00161433 /* Mercartto___Prototype_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397478EB1B27746B00161433 /* Mercartto___Prototype_2Tests.swift */; };
 		398050EE1B2A032200517AFA /* ArtistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398050ED1B2A032200517AFA /* ArtistData.swift */; };
 		398050F01B2A11A800517AFA /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398050EF1B2A11A800517AFA /* FavouritesViewController.swift */; };
+		39B055291B2F309D00FE2CB2 /* FavouritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B055281B2F309D00FE2CB2 /* FavouritesCollectionViewController.swift */; };
+		39B0552B1B2F409E00FE2CB2 /* FavouritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0552A1B2F409E00FE2CB2 /* FavouritesCollectionViewCell.swift */; };
 		39F809A11B28B77A005EA9DF /* WYAPRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */; };
 		39F809A31B28B7E3005EA9DF /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		397478EB1B27746B00161433 /* Mercartto___Prototype_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mercartto___Prototype_2Tests.swift"; sourceTree = "<group>"; };
 		398050ED1B2A032200517AFA /* ArtistData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtistData.swift; path = "Mercartto - Prototype 2/ArtistData.swift"; sourceTree = "<group>"; };
 		398050EF1B2A11A800517AFA /* FavouritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavouritesViewController.swift; path = "Mercartto - Prototype 2/FavouritesViewController.swift"; sourceTree = "<group>"; };
+		39B055281B2F309D00FE2CB2 /* FavouritesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavouritesCollectionViewController.swift; path = "Mercartto - Prototype 2/FavouritesCollectionViewController.swift"; sourceTree = "<group>"; };
+		39B0552A1B2F409E00FE2CB2 /* FavouritesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavouritesCollectionViewCell.swift; path = "Mercartto - Prototype 2/FavouritesCollectionViewCell.swift"; sourceTree = "<group>"; };
 		39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WYAPRootViewController.swift; path = "Mercartto - Prototype 2/WYAPRootViewController.swift"; sourceTree = "<group>"; };
 		39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LauncherViewController.swift; path = "Mercartto - Prototype 2/LauncherViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +88,8 @@
 				39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */,
 				3955AA1C1B29247C00DC6A14 /* BrowseAllArtViewController.swift */,
 				398050EF1B2A11A800517AFA /* FavouritesViewController.swift */,
+				39B055281B2F309D00FE2CB2 /* FavouritesCollectionViewController.swift */,
+				39B0552A1B2F409E00FE2CB2 /* FavouritesCollectionViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 		397478C81B27746B00161433 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Eff Dee Productions";
 				TargetAttributes = {
@@ -251,8 +258,10 @@
 				398050EE1B2A032200517AFA /* ArtistData.swift in Sources */,
 				3955AA1D1B29247C00DC6A14 /* BrowseAllArtViewController.swift in Sources */,
 				397478D81B27746B00161433 /* ViewController.swift in Sources */,
+				39B0552B1B2F409E00FE2CB2 /* FavouritesCollectionViewCell.swift in Sources */,
 				39F809A11B28B77A005EA9DF /* WYAPRootViewController.swift in Sources */,
 				398050F01B2A11A800517AFA /* FavouritesViewController.swift in Sources */,
+				39B055291B2F309D00FE2CB2 /* FavouritesCollectionViewController.swift in Sources */,
 				397478D61B27746B00161433 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
