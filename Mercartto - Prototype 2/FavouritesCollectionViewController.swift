@@ -12,7 +12,10 @@ let reuseIdentifier = "favsCell"
 
 class FavouritesCollectionViewController: UICollectionViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var artworkImages = [String]()
+//    var artworkImages = [String]()
+//    var currentIndex:Int = 0
+    
+    let artistData = ArtistData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +24,14 @@ class FavouritesCollectionViewController: UICollectionViewController, UICollecti
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        
-        
-        artworkImages = ["p1left.jpg", "p1right.jpg", "p2left.jpg", "p1left.jpg"]
 
         // Do any additional setup after loading the view.
+       // var artistInfo1 =
+         //   ["p1left.jpg","p2left.jpg", "p3left.jpg", "p3right.jpg","p4right.jpg"]
+//        artworkImages = ["p1left.jpg", "p1right.jpg", "p2left.jpg", "p1left.jpg"]
+       //println(artistInfo1[1])
+      
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,55 +53,45 @@ class FavouritesCollectionViewController: UICollectionViewController, UICollecti
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         //#warning Incomplete method implementation -- Return the number of sections
-        return artworkImages.count
+        return 1
     }
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //#warning Incomplete method implementation -- Return the number of items in the section
-        return 0
+
+        return artistData.artistInfo1.count
+
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! FavouritesCollectionViewCell
-    
-        // Configure the cell
+
         
-        let image = UIImage(named: artworkImages[indexPath.row])
-        cell.imageView.image = image
+        cell.imageView.image = UIImage(named:artistData.artistInfo1[indexPath.row])
+        
+        
         
         return cell
     }
 
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
-    
-    }
-    */
+//    func styleMyViews () {
+//        currentIndex++
+//        if currentIndex == artistData.artistInfo.count {
+//            self.currentIndex = 0
+//        }
+//        if let imageName = artistData.artistInfo[currentIndex]["ImageName"] {
+//            artImages.image = UIImage(named: imageName)
+//        }
+//        if let artworkNameTitle = artistData.artistInfo[currentIndex]["ArtTitle"]{
+//            artTitle.text = artworkNameTitle
+//        }
+//        if let artistNameTitle = artistData.artistInfo[currentIndex]["ArtistName"]{
+//            artistName.text = artistNameTitle
+//        }
+//        if let backgroundImageName = artistData.artistInfo[currentIndex]["ImageName"] {
+//            backgroundImage.image = UIImage(named: backgroundImageName)
+//        }
+//        
+//    }
 
 }

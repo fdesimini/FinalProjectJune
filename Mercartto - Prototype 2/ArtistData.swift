@@ -20,5 +20,8 @@ class ArtistData: NSObject {
         ["ArtTitle": "Sculptures find their location","ArtistName": "Albert Oehlen", "ImageName":"p4left.jpg", "Category":"Kitsch"],
         ["ArtTitle": "The Milkmaid","ArtistName": "Johannes Vermeer", "ImageName":"p4right.jpg", "Category":"Contemporary"]
     ]
+    
+    var artistInfo1 =
+        ["p1left.jpg","p2left.jpg", "p3left.jpg", "p3right.jpg","p4right.jpg"]
 
 }

@@ -122,7 +122,7 @@
                                         <barButtonItem key="rightBarButtonItem" title="Favourites" id="a5b-XC-3NT">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <segue destination="9PT-k1-BSO" kind="show" identifier="goToFavourite" id="cvg-Xx-3Z3"/>
+                                                <segue destination="NgM-P5-OV9" kind="show" id="HfO-Fb-OAU"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -296,8 +296,9 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5gZ-YT-Gr8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6th-RT-uYZ">
-                            <size key="itemSize" width="70" height="70"/>
+                            <size key="itemSize" width="120" height="120"/>
                             <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -307,30 +308,33 @@
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-Af-Unw">
-                                            <rect key="frame" x="8" y="8" width="54" height="54"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-Af-Unw">
+                                            <rect key="frame" x="10" y="10" width="100" height="100"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <constraints>
-                                    <constraint firstItem="xe5-Af-Unw" firstAttribute="top" secondItem="oxb-Xp-Ugj" secondAttribute="topMargin" id="RdJ-zF-Fli"/>
-                                    <constraint firstItem="xe5-Af-Unw" firstAttribute="leading" secondItem="oxb-Xp-Ugj" secondAttribute="leadingMargin" id="VxJ-jF-slz"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="xe5-Af-Unw" secondAttribute="trailing" id="sWM-AE-yuM"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="xe5-Af-Unw" secondAttribute="bottom" id="yPf-Hh-Uef"/>
-                                </constraints>
-                                <size key="customSize" width="70" height="70"/>
+                                <size key="customSize" width="120" height="120"/>
                                 <connections>
                                     <outlet property="imageView" destination="xe5-Af-Unw" id="PNp-rW-BeQ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="favsHeader" id="VmS-B6-z9q">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="G6X-hT-JB3">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eE-sZ-vTL">
+                                    <rect key="frame" x="-8" y="14" width="600" height="21"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.1215686277" green="0.28627452250000002" blue="0.49019607900000001" alpha="1" colorSpace="calibratedRGB"/>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="NgM-P5-OV9" id="fHo-Lg-vmw"/>
