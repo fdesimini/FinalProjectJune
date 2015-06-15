@@ -59,7 +59,7 @@ class FavouritesCollectionViewController: UICollectionViewController, UICollecti
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
-        return artistData.artistInfo1.count
+        return artistData.artistImageName.count
 
     }
 
@@ -67,9 +67,7 @@ class FavouritesCollectionViewController: UICollectionViewController, UICollecti
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! FavouritesCollectionViewCell
 
         
-        cell.imageView.image = UIImage(named:artistData.artistInfo1[indexPath.row])
-        
-        
+        cell.imageView.image = UIImage(named:artistData.artistImageName[indexPath.row])
         
         return cell
     }

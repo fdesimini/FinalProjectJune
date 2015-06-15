@@ -23,5 +23,18 @@ class ArtistData: NSObject {
     
     var artistInfo1 =
         ["p1left.jpg","p2left.jpg", "p3left.jpg", "p3right.jpg","p4right.jpg"]
+    
+    var artistTitle =
+    ["Large Interior, Los Angeles","North Shore, Lake Superior","Parade (Diptych)","Moonrise Over the Sea","The Marchesa Casati","The Harvest","Sculptures find their location","The Milkmaid"]
+    
+    var artistName =
+    ["David Hockney","Franklin Carmichael","Mequitta Ahuja","Caspar David Friedrich","Augustus Edwin John","Vincent Van Gogh","Albert Oehlen","Johannes Vermeer"]
+    
+    var artistImageName =
+    ["p1left.jpg","p1right.jpg","p2left.jpg","p2right.jpg","p3left.jpg","p3right.jpg","p4right.jpg","p4left.jpg"]
+    
+    var artistCategory =
+    ["Contemporary","Contemporary","Kitsch","Contemporary","Contemporary","Contemporary","Kitsch","Contemporary"]
+   
 
 }
