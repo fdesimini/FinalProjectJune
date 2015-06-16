@@ -21,8 +21,8 @@ class ArtistData: NSObject {
         ["ArtTitle": "The Milkmaid","ArtistName": "Johannes Vermeer", "ImageName":"p4right.jpg", "Category":"Contemporary"]
     ]
     
-    var artistInfo1 =
-        ["p1left.jpg","p2left.jpg", "p3left.jpg", "p3right.jpg","p4right.jpg"]
+//    var artistInfo1 =
+//        ["p1left.jpg","p2left.jpg", "p3left.jpg", "p3right.jpg","p4right.jpg"]
     
     var artistTitle =
     ["Large Interior, Los Angeles","North Shore, Lake Superior","Parade (Diptych)","Moonrise Over the Sea","The Marchesa Casati","The Harvest","Sculptures find their location","The Milkmaid"]

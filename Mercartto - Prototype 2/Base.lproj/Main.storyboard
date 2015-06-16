@@ -122,7 +122,7 @@
                                         <barButtonItem key="rightBarButtonItem" title="Favourites" id="a5b-XC-3NT">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <segue destination="NgM-P5-OV9" kind="show" id="HfO-Fb-OAU"/>
+                                                <segue destination="NgM-P5-OV9" kind="show" id="gwE-0A-iAC"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -202,6 +202,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Price " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbZ-fo-CIb">
+                                <rect key="frame" x="534" y="436" width="50" height="24"/>
+                                <color key="backgroundColor" red="0.79607843140000001" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -220,6 +227,7 @@
                             <constraint firstItem="nJ5-Bh-jeQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="LZE-Fb-XDq"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="as7-1R-Cjj" secondAttribute="bottom" id="Omo-4n-yvq"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="TBb-Wk-yBv" secondAttribute="bottom" id="PFS-9E-ISG"/>
+                            <constraint firstItem="TBb-Wk-yBv" firstAttribute="top" secondItem="rbZ-fo-CIb" secondAttribute="bottom" constant="20" id="QXZ-6j-Nhu"/>
                             <constraint firstItem="nJ5-Bh-jeQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="R3R-7c-qyv"/>
                             <constraint firstItem="jZx-Q0-oaP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="Scm-qA-Z5g"/>
                             <constraint firstItem="0NY-RO-U1s" firstAttribute="centerX" secondItem="7Fb-Il-56a" secondAttribute="centerX" constant="1" id="YwH-zw-i9p"/>
@@ -237,6 +245,7 @@
                             <constraint firstItem="7Fb-Il-56a" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="sv3-1E-ydf"/>
                             <constraint firstAttribute="trailing" secondItem="nJ5-Bh-jeQ" secondAttribute="trailing" id="uRa-3u-NwM"/>
                             <constraint firstItem="7Fb-Il-56a" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="ufE-WC-nML"/>
+                            <constraint firstItem="rbZ-fo-CIb" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="yYC-DC-clU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Browse Art" id="Iwg-Ii-LdA"/>
@@ -289,62 +298,63 @@
             </objects>
             <point key="canvasLocation" x="3546" y="176"/>
         </scene>
-        <!--Favourites Collection View Controller-->
+        <!--Favourites-->
         <scene sceneID="xAU-Ui-g8t">
             <objects>
                 <collectionViewController id="NgM-P5-OV9" customClass="FavouritesCollectionViewController" customModule="Mercartto___Prototype_2" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5gZ-YT-Gr8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.96078431372549022" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6th-RT-uYZ">
-                            <size key="itemSize" width="120" height="120"/>
+                            <size key="itemSize" width="140" height="140"/>
                             <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="favsCell" id="oxb-Xp-Ugj" customClass="FavouritesCollectionViewCell" customModule="Mercartto___Prototype_2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-Af-Unw">
-                                            <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <size key="customSize" width="120" height="120"/>
+                                <size key="customSize" width="140" height="140"/>
                                 <connections>
                                     <outlet property="imageView" destination="xe5-Af-Unw" id="PNp-rW-BeQ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="G6X-hT-JB3">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="favHeader" id="G6X-hT-JB3">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eE-sZ-vTL">
-                                    <rect key="frame" x="-8" y="14" width="600" height="21"/>
+                                    <rect key="frame" x="0.0" y="14" width="600" height="21"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.1215686277" green="0.28627452250000002" blue="0.49019607900000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="NgM-P5-OV9" id="fHo-Lg-vmw"/>
                             <outlet property="delegate" destination="NgM-P5-OV9" id="tGE-mN-LNd"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Favourites" id="N5e-3w-6nf"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jHq-uD-Scg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3689" y="883"/>
+            <point key="canvasLocation" x="3566" y="952"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="6g2-n9-kbO">
@@ -453,7 +463,7 @@
         <image name="wyap_darkend" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MDf-x1-rrC"/>
         <segue reference="kPY-ip-xGG"/>
+        <segue reference="MDf-x1-rrC"/>
     </inferredMetricsTieBreakers>
 </document>

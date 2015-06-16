@@ -60,6 +60,7 @@ class FavouritesCollectionViewController: UICollectionViewController, UICollecti
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
         return artistData.artistImageName.count
+        
 
     }
 

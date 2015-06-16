@@ -11,6 +11,7 @@ import UIKit
 
 class BrowseAllArtViewController: UIViewController {
     
+    
     //This is the image I want to swap data into
     @IBOutlet var artImages: UIImageView!
     @IBOutlet var artTitle: UILabel!
@@ -47,7 +48,7 @@ class BrowseAllArtViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+       
     }
 
     override func didReceiveMemoryWarning() {
