@@ -433,24 +433,6 @@
             </objects>
             <point key="canvasLocation" x="2139" y="1097"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Cod-5a-Ust">
-            <objects>
-                <viewController id="kto-mO-bbx" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4uo-PL-lzM"/>
-                        <viewControllerLayoutGuide type="bottom" id="S4V-6h-wXq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GdA-18-TnJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iv7-Cj-uZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2855" y="1097"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3M2-UJ-7NV">
             <objects>
