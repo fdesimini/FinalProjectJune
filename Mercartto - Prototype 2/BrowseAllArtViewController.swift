@@ -18,6 +18,7 @@ class BrowseAllArtViewController: UIViewController {
     @IBOutlet var artistName: UILabel!
     @IBOutlet var backgroundImage: UIImageView!
     @IBOutlet var welcomeText: UILabel!
+    @IBOutlet weak var price: UILabel!
     
     var currentIndex:Int = 0
     let artistData = ArtistData()
@@ -73,7 +74,9 @@ class BrowseAllArtViewController: UIViewController {
         if let backgroundImageName = artistData.artistInfo[currentIndex]["ImageName"] {
             backgroundImage.image = UIImage(named: backgroundImageName)
         }
-
+        if let priceOfArt = artistData.artistInfo[currentIndex]["Price"] {
+            price.text = priceOfArt
+        }
     }
     
     

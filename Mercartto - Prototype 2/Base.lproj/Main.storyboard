@@ -202,8 +202,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Price " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbZ-fo-CIb">
-                                <rect key="frame" x="534" y="436" width="50" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbZ-fo-CIb">
+                                <rect key="frame" x="584" y="460" width="0.0" height="0.0"/>
                                 <color key="backgroundColor" red="0.79607843140000001" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -254,6 +254,7 @@
                         <outlet property="artTitle" destination="SY4-rx-sOo" id="EEx-2t-qNs"/>
                         <outlet property="artistName" destination="2nS-dH-m7W" id="hG5-xU-Cp6"/>
                         <outlet property="backgroundImage" destination="qDN-DK-res" id="eRK-MI-o53"/>
+                        <outlet property="price" destination="rbZ-fo-CIb" id="NnS-dw-Rm9"/>
                         <outlet property="welcomeText" destination="0NY-RO-U1s" id="9lP-in-wcY"/>
                     </connections>
                 </viewController>
