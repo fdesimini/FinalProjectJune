@@ -8,9 +8,44 @@
 
 import UIKit
 
-class QuizViewController: UIViewController {
 
+
+class QuizViewController: UIViewController {
+    
+   
+    var myType = [String]()
+    var currentIndex:Int = 0
+    var quizData = ArtistData()
+    
+    //Left Image that I want to present
+    @IBOutlet weak var leftImage: UIImageView!
+    
+    //Right Image I want to present
+    @IBOutlet weak var rightImage: UIImageView!
+
+    //Prefer Left Image (Top) button
+    @IBAction func preferLeft(sender: AnyObject) {
+        
+        var data = "L"
+        appendMyData(data)
+        changeMyPairingOfImages()
+        
+    }
+    
+     //No preference button
     @IBAction func noPreference(sender: AnyObject) {
+        
+        var data = "N"
+        appendMyData(data)
+        
+    }
+    
+     //Prefer Left Image (Top) button
+    @IBAction func preferRight(sender: AnyObject) {
+        
+        var data = "R"
+        appendMyData(data)
+        
     }
   
     override func viewDidLoad() {
@@ -25,14 +60,44 @@ class QuizViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+    func appendMyData(myString:String){
+        
+        myType.append(myString)
+        println(myType)
+        
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        //If myType has nine items in it then print ("9 items now")
+        //else print "keep going"
+        
+        if  myType.count == 8 {
+            println("You can go now pig")
+            
+            // pass data to parse
+            
+            // enter new view controller
+            
+        } else {
+            // keep appending data with next pairing
+            println( "keep going")
+        }
+        
     }
-    */
+    
+    func changeMyPairingOfImages(){
+      
+        currentIndex++
+        if currentIndex == quizData.artistInfo.count {
+            self.currentIndex = 0
+        }
+        if let imageName = quizData.artistInfo[currentIndex]["ImageName"] {
+            leftImage.image = UIImage(named: imageName)
+        }
+        if let imageName = quizData.artistInfo[currentIndex]["ImageName"] {
+            rightImage.image = UIImage(named: imageName)
+            
+        }
 
+    }
+    
+    
 }
