@@ -37,6 +37,7 @@ class QuizViewController: UIViewController {
         
         var data = "N"
         appendMyData(data)
+         changeMyPairingOfImages()
         
     }
     
@@ -45,6 +46,7 @@ class QuizViewController: UIViewController {
         
         var data = "R"
         appendMyData(data)
+         changeMyPairingOfImages()
         
     }
   
@@ -89,14 +91,10 @@ class QuizViewController: UIViewController {
         if currentIndex == quizData.artistInfo.count {
             self.currentIndex = 0
         }
-        if let imageName = quizData.artistInfo[currentIndex]["ImageName"] {
-            leftImage.image = UIImage(named: imageName)
-        }
-        if let imageName = quizData.artistInfo[currentIndex]["ImageName"] {
-            rightImage.image = UIImage(named: imageName)
-            
-        }
 
+        leftImage.image = UIImage(named:quizData.artImageNameLeft[currentIndex])
+        rightImage.image = UIImage(named:quizData.artImageNameRight[currentIndex])
+        
     }
     
     

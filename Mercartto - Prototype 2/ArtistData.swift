@@ -36,5 +36,92 @@ class ArtistData: NSObject {
     var artistCategory =
     ["Contemporary","Contemporary","Kitsch","Contemporary","Contemporary","Contemporary","Kitsch","Contemporary"]
    
+//Recreating the data objects to call left and right images seperately
+    
+//Left (TOP) data for WYAP (Quiz)
+    var artTitleLeft =
+    ["Large Interior, Los Angeles",
+        "Parade (Diptych)",
+        "The Marchesa Casati",
+        "Sculptures find their location",
+        "Abstract Painting (726)",
+        "Apotryptophanae",
+        "Tc86",
+        "Schiphol" ]
+    
+    var artistNameLeft =
+    ["David Hockney",
+            "Mequitta Ahuja",
+            "Augustus Edwin John",
+            "Albert Oehlen",
+            "Gerhard Richter",
+            "Damien Hirst",
+            "Michael Wolf",
+            "Andreas Gursky"]
+    
+    var artLocation =
+    ["The Metropolitan Museum of Art",
+    "Blanton Museum of Art",
+    "Art Gallery of Ontario",
+    "Essl Museum - Contemporary Art",
+    "Tate",
+    "British Council",
+    "Hong Kong Heritage Museum",
+    "The Metropolitan Museum of Art",
+    "Art Gallery of Ontario"]
+    
+    var artImageNameLeft =
+    ["p1left.jpg",
+    "p2left.jpg",
+    "p3left.jpg",
+    "p4left.jpg",
+    "p5left.jpg",
+    "p6left.jpg",
+    "p7left.jpg",
+    "p8left.jpg"]
+    
+    var artistCategoryLeft =
+    []
+    
+//Right (BOTTOM) data for WYAP (Quiz)
+   
+    var artTitleRight =
+    ["North Shore, Lake Superior",
+    "Moonrise Over the Sea",
+    "The Harvest",
+    "The Milkmaid",
+    "Gum Ball No. 10: “Sugar Daddy”",
+    "Details of Renaissance Paintings (Sandro Botticelli, Birth of Venus, 1482)",
+    "Music, Pink and Blue No. 2",
+    "Untitled (Julia)"]
+    
+    var artistNameRight =
+    ["Franklin Carmichael",
+                "Caspar David Friedrich",
+                "Vincent Van Gogh",
+                "Johannes Vermeer",
+                "Charles Bell",
+                "Andy Warhol",
+                "Georgia O’Keeffe",
+                "Anna Malagrida"]
+    
+    var artLocationRight = ["Art Gallery of Ontario","Alte Nationalgalerie", "Staatliche Museen zu Berlin","Van Gogh Museum","Rijksmuseum","Solomon R. Guggenheim Museum","The Andy Warhol Museum","Whitney Museum of American Art","Fundacion MAPFRE","Tate"]
+    
+    var artImageNameRight =
+    ["p1right.jpg",
+        "p2right.jpg",
+        "p3right.jpg",
+        "p4right.jpg",
+        "p5right.jpg",
+        "p6right.jpg",
+        "p7right.jpg",
+        "p8right.jpg"]
+    
+    var artistCategoryRight =
+    []
 
+    
+    
+    
+    
 }
