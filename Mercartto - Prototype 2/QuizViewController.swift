@@ -77,10 +77,12 @@ class QuizViewController: UIViewController {
             // pass data to parse
             
             // enter new view controller
+
             
         } else {
             // keep appending data with next pairing
             println( "keep going")
+
         }
         
     }
@@ -96,6 +98,18 @@ class QuizViewController: UIViewController {
         rightImage.image = UIImage(named:quizData.artImageNameRight[currentIndex])
         
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        if segue.identifier == "ResultsSegue"
+        {
+            if let  destinationVC = segue.destinationViewController as? QuizResultViewController{
+           
+                
+                
+            }
+        }
+    }
+
     
     
 }

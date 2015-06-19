@@ -29,6 +29,7 @@
 		39AA79AF1B32600D0065D162 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA79AE1B32600D0065D162 /* QuizViewController.swift */; };
 		39B055291B2F309D00FE2CB2 /* FavouritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B055281B2F309D00FE2CB2 /* FavouritesCollectionViewController.swift */; };
 		39B0552B1B2F409E00FE2CB2 /* FavouritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0552A1B2F409E00FE2CB2 /* FavouritesCollectionViewCell.swift */; };
+		39F59AC41B346A2400890E91 /* QuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F59AC31B346A2400890E91 /* QuizResultViewController.swift */; };
 		39F809A11B28B77A005EA9DF /* WYAPRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */; };
 		39F809A31B28B7E3005EA9DF /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		39AA79AE1B32600D0065D162 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuizViewController.swift; path = "Mercartto - Prototype 2/QuizViewController.swift"; sourceTree = "<group>"; };
 		39B055281B2F309D00FE2CB2 /* FavouritesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavouritesCollectionViewController.swift; path = "Mercartto - Prototype 2/FavouritesCollectionViewController.swift"; sourceTree = "<group>"; };
 		39B0552A1B2F409E00FE2CB2 /* FavouritesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavouritesCollectionViewCell.swift; path = "Mercartto - Prototype 2/FavouritesCollectionViewCell.swift"; sourceTree = "<group>"; };
+		39F59AC31B346A2400890E91 /* QuizResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuizResultViewController.swift; path = "Mercartto - Prototype 2/QuizResultViewController.swift"; sourceTree = "<group>"; };
 		39F809A01B28B77A005EA9DF /* WYAPRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WYAPRootViewController.swift; path = "Mercartto - Prototype 2/WYAPRootViewController.swift"; sourceTree = "<group>"; };
 		39F809A21B28B7E3005EA9DF /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LauncherViewController.swift; path = "Mercartto - Prototype 2/LauncherViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				39B055281B2F309D00FE2CB2 /* FavouritesCollectionViewController.swift */,
 				39B0552A1B2F409E00FE2CB2 /* FavouritesCollectionViewCell.swift */,
 				39AA79AE1B32600D0065D162 /* QuizViewController.swift */,
+				39F59AC31B346A2400890E91 /* QuizResultViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				397478D81B27746B00161433 /* ViewController.swift in Sources */,
 				39B0552B1B2F409E00FE2CB2 /* FavouritesCollectionViewCell.swift in Sources */,
 				39F809A11B28B77A005EA9DF /* WYAPRootViewController.swift in Sources */,
+				39F59AC41B346A2400890E91 /* QuizResultViewController.swift in Sources */,
 				398050F01B2A11A800517AFA /* FavouritesViewController.swift in Sources */,
 				39B055291B2F309D00FE2CB2 /* FavouritesCollectionViewController.swift in Sources */,
 				397478D61B27746B00161433 /* AppDelegate.swift in Sources */,
