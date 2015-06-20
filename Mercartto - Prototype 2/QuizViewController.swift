@@ -12,6 +12,7 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
+    @IBOutlet weak var bottomImage: UIImageView!
    
     var myType = [String]()
     var currentIndex:Int = 0
@@ -72,11 +73,12 @@ class QuizViewController: UIViewController {
         //else print "keep going"
         
         if  myType.count == 8 {
-            println("You can go now pig")
+            println("9 items now")
             
             // pass data to parse
             
             // enter new view controller
+            self.performSegueWithIdentifier("ResultsSegue", sender: self)
 
             
         } else {
@@ -98,18 +100,16 @@ class QuizViewController: UIViewController {
         rightImage.image = UIImage(named:quizData.artImageNameRight[currentIndex])
         
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
-        if segue.identifier == "ResultsSegue"
-        {
-            if let  destinationVC = segue.destinationViewController as? QuizResultViewController{
-           
-                
-                
-            }
-        }
-    }
 
+    //gesture images from sit down with James
+    @IBAction func swipedBottomImage(sender: UISwipeGestureRecognizer) {
+//        print("Yatta!")
+//        UIView.animateWithDuration(0.3, animations: { () -> Void in
+//            self.bottomImage.frame = CGRectMake(self.bottomImage.frame.origin.x + 320, self.bottomImage.frame.origin.y, self.bottomImage.frame.size.width, self.bottomImage.frame.size.height)
+//        })
+//        
+        
+    }
     
     
 }
