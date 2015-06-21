@@ -10,6 +10,10 @@ import UIKit
 
 class QuizResultViewController: UIViewController {
 
+    @IBAction func browseYourArtType(sender: AnyObject) {
+         self.performSegueWithIdentifier("resultsQuiz", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +26,7 @@ class QuizResultViewController: UIViewController {
     }
     
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -30,6 +34,6 @@ class QuizResultViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    
+    */
 
 }
