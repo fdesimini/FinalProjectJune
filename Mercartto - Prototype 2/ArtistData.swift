@@ -21,8 +21,8 @@ class ArtistData: NSObject {
         ["ArtTitle": "The Milkmaid","ArtistName": "Johannes Vermeer", "ImageName":"p4right.jpg", "Category":"Contemporary","Price":"$500.00"]
     ]
     
-//    var artistInfo1 =
-//        ["p1left.jpg","p2left.jpg", "p3left.jpg", "p3right.jpg","p4right.jpg"]
+
+//        This data is for Browse Art
     
     var artistTitle =
     ["Large Interior, Los Angeles","North Shore, Lake Superior","Parade (Diptych)","Moonrise Over the Sea","The Marchesa Casati","The Harvest","Sculptures find their location","The Milkmaid"]
@@ -36,7 +36,7 @@ class ArtistData: NSObject {
     var artistCategory =
     ["Contemporary","Contemporary","Kitsch","Contemporary","Contemporary","Contemporary","Kitsch","Contemporary"]
    
-//Recreating the data objects to call left and right images seperately
+//Recreating the data objects to call left and right images seperately in the WYAP area
     
 //Left (TOP) data for WYAP (Quiz)
     var artTitleLeft =
@@ -47,28 +47,30 @@ class ArtistData: NSObject {
         "Abstract Painting (726)",
         "Apotryptophanae",
         "Tc86",
-        "Schiphol" ]
+        "Schiphol",
+        "Blue Reflections"]
     
     var artistNameLeft =
     ["David Hockney",
-            "Mequitta Ahuja",
-            "Augustus Edwin John",
-            "Albert Oehlen",
-            "Gerhard Richter",
-            "Damien Hirst",
-            "Michael Wolf",
-            "Andreas Gursky"]
+        "Mequitta Ahuja",
+        "Augustus Edwin John",
+        "Albert Oehlen",
+        "Gerhard Richter",
+        "Damien Hirst",
+        "Michael Wolf",
+        "Andreas Gursky",
+        "Kazuo Nakamura"]
     
     var artLocation =
     ["The Metropolitan Museum of Art",
-    "Blanton Museum of Art",
-    "Art Gallery of Ontario",
-    "Essl Museum - Contemporary Art",
-    "Tate",
-    "British Council",
-    "Hong Kong Heritage Museum",
-    "The Metropolitan Museum of Art",
-    "Art Gallery of Ontario"]
+        "Blanton Museum of Art",
+        "Art Gallery of Ontario",
+        "Essl Museum - Contemporary Art",
+        "Tate",
+        "British Council",
+        "Hong Kong Heritage Museum",
+        "The Metropolitan Museum of Art",
+        "Art Gallery of Ontario"]
     
     var artImageNameLeft =
     ["p1left.jpg",
@@ -78,7 +80,8 @@ class ArtistData: NSObject {
     "p5left.jpg",
     "p6left.jpg",
     "p7left.jpg",
-    "p8left.jpg"]
+    "p8left.jpg",
+    "p9left.jpg"]
     
     var artistCategoryLeft =
     []
@@ -87,25 +90,36 @@ class ArtistData: NSObject {
    
     var artTitleRight =
     ["North Shore, Lake Superior",
-    "Moonrise Over the Sea",
-    "The Harvest",
-    "The Milkmaid",
-    "Gum Ball No. 10: “Sugar Daddy”",
-    "Details of Renaissance Paintings (Sandro Botticelli, Birth of Venus, 1482)",
-    "Music, Pink and Blue No. 2",
-    "Untitled (Julia)"]
+        "Moonrise Over the Sea",
+        "The Harvest",
+        "The Milkmaid",
+        "Gum Ball No. 10: “Sugar Daddy”",
+        "Details of Renaissance Paintings (Sandro Botticelli, Birth of Venus, 1482)",
+        "Music, Pink and Blue No. 2",
+        "Untitled (Julia)",
+        "Interior with a Picture"]
     
     var artistNameRight =
     ["Franklin Carmichael",
-                "Caspar David Friedrich",
-                "Vincent Van Gogh",
-                "Johannes Vermeer",
-                "Charles Bell",
-                "Andy Warhol",
-                "Georgia O’Keeffe",
-                "Anna Malagrida"]
+        "Caspar David Friedrich",
+        "Vincent Van Gogh",
+        "Johannes Vermeer",
+        "Charles Bell",
+        "Andy Warhol",
+        "Georgia O’Keeffe",
+        "Anna Malagrida",
+        "Patrick Caulfield"]
     
-    var artLocationRight = ["Art Gallery of Ontario","Alte Nationalgalerie", "Staatliche Museen zu Berlin","Van Gogh Museum","Rijksmuseum","Solomon R. Guggenheim Museum","The Andy Warhol Museum","Whitney Museum of American Art","Fundacion MAPFRE","Tate"]
+    var artLocationRight =
+    ["Art Gallery of Ontario",
+        "Alte Nationalgalerie",
+        "Staatliche Museen zu Berlin",
+        "Van Gogh Museum","Rijksmuseum",
+        "Solomon R. Guggenheim Museum",
+        "The Andy Warhol Museum",
+        "Whitney Museum of American Art",
+        "Fundacion MAPFRE",
+        "Tate"]
     
     var artImageNameRight =
     ["p1right.jpg",
@@ -115,7 +129,8 @@ class ArtistData: NSObject {
         "p5right.jpg",
         "p6right.jpg",
         "p7right.jpg",
-        "p8right.jpg"]
+        "p8right.jpg",
+        "p9right.jpg"]
     
     var artistCategoryRight =
     []

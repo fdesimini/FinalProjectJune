@@ -72,7 +72,7 @@ class QuizViewController: UIViewController {
         //If myType has nine items in it then print ("9 items now")
         //else print "keep going"
         
-        if  myType.count == 8 {
+        if  myType.count == 9 {
             println("9 items now")
             
             // pass data to parse
@@ -92,7 +92,7 @@ class QuizViewController: UIViewController {
     func changeMyPairingOfImages(){
       
         currentIndex++
-        if currentIndex == quizData.artistInfo.count {
+        if currentIndex == quizData.artImageNameLeft.count {
             self.currentIndex = 0
         }
 
